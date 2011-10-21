@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+<title>bloged.list</title>
+<link rel="stylesheet" href="../../css/default/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/default/eed.css" type="text/css" media="screen" />
+</head>
+<body>
+<!--##begin-->
+<!--$Id: -2051315182.list.tem.html 1479 2008-11-20 13:13:18Z buffy1860 $-->
+<!--##hide-all-->
+!{inhalt}
+<!--##show-->
+<!--##hide-new-->
+<form action="/auth/admin/bloged/add.html" method="post">
+<input type="submit" value="g(new)" name="blog"/>
+<input type="hidden" name="link" value="!{link}"/>
+<input type="hidden" name="kategorie" value="!{kategorie}"/>
+<!-- <input type="text" name="anzahl"/> -->
+</form>
+<!--##show-->
+<!--##loop-list-->
+<b><small>!{datum}</small> - <a href="!{detaillink}">!{titel_org}</a></b>
+    !{image}
+    !{teaser}
+    <p>
+    <a href="!{detaillink}">mehr</a> !{editlink} !{deletelink}
+    </p>
+<div class="clearer"></div><hr />
+<!--##cont-->
+
+
+
+<!--##hide-inhalt_selector-->
+<p style="float:left">g(anzahl) !#ausgaben_anzahl</p>
+<p style="float:right">!#ausgaben_inhalt_selector</p>
+<!--##show-->
+<p>!#ausgaben_output</p>
+<p>!#ausgaben_inaccessible</p>
+<!--##end-->
+</body>
+</html>

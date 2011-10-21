@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+<title>kontakt</title>
+<link rel="stylesheet" href="../../css/default/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/default/eed.css" type="text/css" media="screen" />
+</head>
+<body>
+<!--##begin-->
+<!--$Id: kontakt.tem.html 1665 2009-12-02 12:57:13Z buffy1860 $-->
+<div id="kontakt">
+    <form method="post" action="!#ausgaben_form_aktion" id="eEd">
+        <h1>#(ueberschrift)</h1>
+        <p>#(inhalt)</p>
+        <p>!#ausgaben_form_error</p>
+
+        <!--##hide-success-->
+        <p>
+            #(success)
+        </p>
+        <!--##show-->
+        <!--##hide-form-->
+        <fieldset>          
+            !#element_mitteilung
+<!--            !#element_betreff-->
+        </fieldset>
+        <fieldset>
+            <label for="name">#(name)</label>
+            !#element_betreff<br />
+            <label for="strasse">g(strasse)</label>
+            !#element_strasse<br />
+            <label for="plz">g(plz)</label>
+            !#element_plz<br />
+            <label for="ort">g(ort)</label>
+            !#element_ort<br />
+            <label for="telefon">g(telefon)</label>
+            !#element_telefon<br />
+<!--            <label for="e-mail">g(e-mail)</label>-->
+<!--            !#element_e-mail<br />-->
+            <label for="last_viewed">g(last_viewed)</label>
+            <input type="text" value="!#ausgaben_last_viewed" name="last_viewed" style="display: none" class="" maxlength="50" id="last_viewed"  readonly="true" />
+            <!--##show-->
+        </fieldset>
+            <!--##hide-captcha-->
+            <fieldset>
+                            <p>#(zusatz)</p>
+           <img title="captcha" alt="captcha" src="!{url}" /><br />
+            <input type="text" value="" name="captcha" class="" id="captcha" />
+            <input name="captcha_proof" type="hidden" value="!{proof}" class="hidden" />
+            <!--##show-->
+            <!--##hide-form-->
+            <input name="form_referer" type="hidden" value="!#ausgaben_form_referer" class="hidden" />
+            <div class="clearer">&nbsp;</div>
+            <input type="submit" name="send[]" value="g(send)" class="first" />
+            <input type="button" name="abort" value="g(abort)" onclick="location='!#ausgaben_form_break'" class="next" />
+            <div class="clearer">&nbsp;</div>
+</fieldset>
+            <!--##show-->
+        <p>!#ausgaben_output</p>
+        <p>!#ausgaben_inaccessible</p>
+    </form>
+</div>
+<!--##end-->
+</body>
+</html>
