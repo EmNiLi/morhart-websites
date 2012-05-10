@@ -1,0 +1,423 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+body {
+    font-size:0.8em;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+/* ueberschriften */
+h1{
+color:#4a3852;
+    border-bottom:1px solid #CCCCCC;
+    font-size:1.15em;
+    margin:0 0 10px 0;
+    padding-bottom:3px;
+}
+
+hr{
+    border:none;
+    background:#CCCCCC;
+    height:1px;
+}
+
+h2{
+    color:#4a3852;
+    font-size:1.15em;
+    margin:1.5em 0 0.75em;
+}
+
+h3 {
+    color:#4a3852;
+    font-size:1.0em;
+    margin:1.5em 0 0.75em;
+}
+
+a img{
+    border:0px;
+}
+
+fieldset {
+    background:#EFEFEF none repeat scroll 0 0;
+    border:1px solid #CCCCCC;
+    margin:5px 0;
+    padding:5px;
+}
+
+/*#logo{
+    float:left;
+    background-image:url(/images/red/tie1_logo.gif);
+    width:274px; height:213px;
+}*/
+
+#topheader{
+    float:right;
+    width:526px;
+    height:97px;
+    background-color:#F0F0F0;
+    position:relative
+}
+
+#toplinks{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+#menu{
+    float:right;
+    width:526px;
+    height:32px;
+    background-image:url(/images/red/bg_menu.gif);
+    background-repeat:repeat-x;
+}
+
+/*#submenu{
+    float:right;
+    width:526px;
+    height:32px;
+    background-image:url(/images/red/bg_submenu.gif);
+    background-position:top; background-repeat:repeat-x;
+}*/
+
+#contenttext{
+    float:right;
+    width:526px;
+}
+
+#leftpanel{
+    clear:left;
+    float:left;
+    width:274px;
+}
+
+#footer{
+    float:right;
+    width:800px;
+    background-color:#F0F0F0;
+    padding:10px;
+}
+
+#tools{
+/*     border:1px solid #CCCCCC; */
+    margin: 10px 0 0 0;
+    clear:left;
+    float:left;
+    width:274px;
+}
+
+/*GRAY PANEL*/
+/*.graypanel{
+	border:solid 1px #666666; background-color:#F7F7F7; padding:10px; margin:10px;
+}*/
+
+/*TEXT STYLES*/
+.bodytext {
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+/* 	color: #666666; */
+}
+
+.titletext {
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	color:#CC0000;
+}
+.whitetitle {
+    font-size: 36px;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.smalltitle {
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	color:#CC0000;
+}
+
+/*Hauptmenu*/
+
+.smallwhitetext {
+/* 	font: 0.7em Tahoma, sans-serif; */
+	font-size: 11px;
+	font-weight:bold;
+    color: red;
+}
+.smallwhitetext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+}
+.smallwhitetext a:hover{
+    text-decoration:none;
+}
+
+/*Hauptmenu*/
+
+/*Navigation rechts oben*/
+
+.smallgraytext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#999999;
+}
+.smallgraytext a{
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color:#999999;
+	text-decoration:none;
+}
+.smallgraytext a:hover{
+	text-decoration:underline;
+}
+
+/*Navigation rechts oben*/
+
+/* Admin-Werkzeuge */
+
+.smallredtext {
+	font: 0.9em Tahoma, sans-serif;
+	font-weight:bold;
+	color:#CC0000;
+}
+.smallredtext a{
+	font: 0.9em Tahoma, sans-serif;
+	font-weight:bold;
+	color:#CC0000;
+	text-decoration:none;
+}
+.smallredtext a:hover{
+	text-decoration:underline;
+}
+
+/* Admin-Werkzeuge */
+
+
+/* magic-box */
+#magic{
+    position:absolute;
+    left:0px;
+    top:5px;
+    padding:3px;
+    z-index:1000;
+    background:#F7F7F7;
+    border:1px solid #666666;
+}
+/* magic-box */
+
+
+/* fuer den div-tag class box */
+.box {
+    background: #eee;
+    margin: 5px 0px 5px 10px;
+    padding: 5px 0px 5px 5px;
+}
+/* fuer den div-tag class box */
+
+/* fuer den fileed */
+li.thumbs  {
+    list-style:none;
+}
+/* fuer den fileed */
+
+
+/* tabellen */
+#contenttext table {
+    font-size:inherit;
+}
+#contenttext td, #contenttext th, #contenttext .cell {
+    background:#EFF2FA;
+    border:1px solid #CCCCCC;
+    padding:2px;
+}
+/* tabellen */
+
+/* history */
+.old {
+color:red;
+}
+.new {
+color:green;
+}
+/* history */
+
+#leftpanel h1 {
+    background-image:url(/images/red/nav3button_bg1.gif);
+    border:none;
+    color:#003366;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:0.9em;
+    font-weight:normal;
+    line-height:9px;
+    margin:0;
+    padding:4px 0 7px 0px;
+/* float:right; */
+}
+/* Menu level2 */
+#leftpanel h2 {
+    color: #4a3852;
+    font-size: 1.15em;
+    padding: 0 0 0 0px;
+    margin: 0 0 0 10px;
+    float:left;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+#leftpanel h3 {
+    margin:0 0 0.5em;
+    color:#666666;
+}
+
+
+#leftpanel a {
+    color:#003366;
+    text-decoration:none;
+}
+
+#leftpanel a:hover {
+    color:#CC3399;
+    text-decoration:none;
+}
+/* Menu level2 */
+
+/* news */
+.news{
+    margin:10px;
+}
+
+.news p{
+    margin:10px 0 0 0;
+}
+
+/* news */
+
+.teaser {
+    margin-bottom:1.5em;
+}
+/* tools ( amazon usw. ) */
+#tools p {
+    float:left;
+}
+
+#tools h2 {
+    color: #4a3852;
+    font-size: 1.15em;
+    padding: 0 0 0 0px;
+    margin: 0 0 0 10px;
+    float:left;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+
+/* sub_menu */
+#contenttext .sub_menu {
+/* background:#F0F0F0 none repeat scroll 0 0; */
+/* border-color:#CCCCCC; */
+/* border-style:solid; */
+border-width:5px 1px 1px;
+float:right;
+/* margin:0.7em 0; */
+margin: 10px 0 0 10px;
+overflow:hidden;
+text-align:right;
+width:150px;
+}
+
+#contenttext .sub_menu ul {
+    list-style : none;
+    margin: 0;
+    padding: 0px;
+}
+
+#contenttext .sub_menu a {
+    color:#003366;
+    text-decoration:none;
+}
+
+
+
+/* sub_menu */
+
+/* kontakt*/
+.kontakt label {
+
+    float: left;
+    display: block;
+    clear: both;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+
+}
+
+.kontakt input, .kontakt textarea, .kontakt select {
+    float: left;
+    display: block;
+    width: 250px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+}
+
+.kontakt input.small {
+    width: 50px;
+}
+
+.kontakt input.medium {
+    width: 195px;
+}
+
+.kontakt .hidden {
+    display: none;
+}
+
+
+/* kontakt*/
+/* tools ( amazon usw. ) */
+
+/* route map24 */
+#contenttext .map24_title {
+    background-color:#0072BC;
+    color:#FFFFFF;
+    font-family:Arial;
+    font-size:11px;
+    font-weight:bold;
+    padding-left:10px;
+    padding-top:31px;
+}
+
+#contenttext .map24_input {
+    background-color:#FFFFFF;
+    border:1px solid #BEBEBE;
+    color:#555555;
+    font-family:Arial,Verdana,Helvetica;
+    font-size:11px;
+    font-weight:normal;
+}
+/* route map24 */
+
+/* CHEFKOCH */
+#ck-rezeptname {
+color:#5B5B5B;
+    text-align:left;
+    font-size:1.15em;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    margin:10px 0px 10px 0px;
+    font-weight:bold;
+}
+
+#ck-footer {
+    font-size:0.8em;
+    border:1px solid black;
+    color:#000000;
+}
+/* CHEFKOCH */
