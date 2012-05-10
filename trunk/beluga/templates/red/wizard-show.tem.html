@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Wizard-Show</title>
+<link rel="stylesheet" href="../../css/default/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/default/eed.css" type="text/css" media="screen" />
+</head>
+<body>
+<!--##begin-->
+
+<div id="wizard">
+
+    <div class="admin_head" style="">
+        #(inhalt)
+        <div class="info_hover">
+            <div>
+                <img src="/images/default/details.png" alt="mehr Informationen" width="24" height="18" border="0">
+
+                <div class="info_hidden " id="" style="">
+                    #(info_box)
+                    <ul>
+                        <!--##loop-sima_pos-->
+                        <li>!{label}</li>
+                        <!--##cont -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearer"></div>
+    </div>
+     <div>
+         #{image_map}
+         <!--versions-umschalter-->
+        <span style="float:right;">
+            <!--##hide-version_prev-->
+            | <a href="!{link_first}">&lt;&lt;</a> | <a href="!{link_prev}">&lt;</a> |
+            <!--##show-->
+            g(version) !#ausgaben_vaktuell g(of) !#ausgaben_vgesamt
+            <!--##hide-version_next-->
+            | <a href="!{link_next}">&gt;</a> | <a href="!{link_last}">&gt;&gt;</a> |
+            <!--##show-->
+        </span>
+
+     </div>
+
+    <pre id="output"></pre>
+
+    <div class="clearer">
+        <a name="preview">&nbsp;</a>
+    </div>
+
+    <hr>
+    <div id="vorhang_preview" style="display:none;"></div>
+
+
+
+    <div class="column_2">
+        <!--##hide-no_sort_content-->
+        <div style="display:block;margin:5px;background:silver;" id="no_sort_content">#(show_none)</div>
+        <!--##show-->
+        <!--##hide-sort_content-->
+        <ul id="content_blocks">
+            <!--##loop-sort_content-->
+            <li id="item_!{key}" class="!{class}" style="!{style}">
+<!--                 <a name="item_!{key}" href="#" style="float:right;">nach oben</a> -->
+                <div class="clearer"></div>
+                !{value_html}
+                <div class="clearer"></div>
+                <p class="buttons" !{modify}>
+                    <a href="!{link_up}" class="button" title="#(wiz_moveup_desc)" style="!{display_up}">#(wiz_moveup)</a>
+                    <a href="!{link_down}" class="button" title="#(wiz_movedown_desc)" style="!{display_down}">#(wiz_movedown)</a>
+                    <a href="!{delete}" class="button" title="#(wiz_delete_desc)" style="!{display_delete}">#(wiz_delete)</a>
+                </p>
+                <div class="clearer"></div>
+            </li>
+            <!--##cont-->
+        </ul>
+        <!--##show-->
+    </div>
+
+    <div class="column_3">
+        <div class="box">
+            <h3>#(add_block)</h3>
+            <!--##loop-add_buttons-->
+            <a href="!{link}" class="button" title="!{item}">!{item}</a>
+            <!--##cont-->
+            <div class="clearer"></div>
+        </div>
+
+        <!--##hide-default-->
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                <button type="button" onclick="preview();" id="button_preview" class="button">g(preview)</button>
+                <button type="submit" name="version[]" value="version" class="button">g(save)</button>
+                <button type="button" onclick="lb_cancel.show();" class="button">g(abort)</button>
+                <div id="cancel" style="display:none;">
+                    #(confirm_cancel)
+                    <p >
+                        <button type="submit" name="cancel[]" value="cancel" class="button" style="display:block;margin:3px;width:100px;float:left;">g(yes)</button>
+                        <button type="button" onclick="lb_cancel.hide();;" class="button" style="display:block;margin:3px;width:100px;float:right;">g(no)</button>
+                    </p>
+                </div>
+
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <!--##show-->
+
+        <!--##hide-edit-->
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                <button type="button" onclick="preview();" id="button_preview" class="button">g(preview)</button>
+                <button type="submit" name="version[]" value="version" class="button">g(save)</button>
+                <button type="button" onclick="lb_cancel.show();" class="button">g(abort)</button>
+                <div id="cancel" style="display:none;">
+                    #(confirm_cancel)
+                    <p >
+                        <button type="submit" name="cancel[]" value="cancel" class="button" style="display:block;margin:3px;width:100px;float:left;">g(yes)</button>
+                        <button type="button" onclick="lb_cancel.hide();;" class="button" style="display:block;margin:3px;width:100px;float:right;">g(no)</button>
+                    </p>
+                </div>
+
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                <button type="button" onclick="lb_release.show();" class="button">#(ask_release)</button>
+                <div id="release" class="ajax_pop_up" style="display:none;">
+                    #(confirm_release)
+                    <p >
+                        <button type="submit" name="version[]" value="version" class="button" style="display:block;margin:3px;width:100px;float:left;">g(yes)</button>
+                        <button type="button" onclick="lb_release.hide();;" class="button" style="display:block;margin:3px;width:100px;float:right;">g(no)</button>
+                        <input type="hidden" name="release_mark" value="-1" />
+                    </p>
+                </div>
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <!--##show-->
+
+        <!--##hide-publish-->
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                <button type="button" onclick="preview();" id="button_preview" class="button">g(preview)</button>
+                <button type="submit" name="version[]" value="version" class="button">g(save)</button>
+                <button type="button" onclick="lb_cancel.show();" class="button">g(abort)</button>
+                <div id="cancel" style="display:none;">
+                    #(confirm_cancel)
+                    <p >
+                        <button type="submit" name="cancel[]" value="cancel" class="button" style="display:block;margin:3px;width:100px;float:left;">g(yes)</button>
+                        <button type="button" onclick="lb_cancel.hide();;" class="button" style="display:block;margin:3px;width:100px;float:right;">g(no)</button>
+                    </p>
+                </div>
+
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                <button type="submit" class="button" name="version[]" value="version">#(release)</button>
+                <input type="hidden" name="release_mark" value="-1" />
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <!--##show-->
+
+        <!--##hide-blocked-->
+        <div class="box">
+            <form method="post" action="!#ausgaben_form_aktion">
+                #(blocked)
+                <button type="submit" name="cancel[]" value="cancel" class="button">g(abort)</button>
+                <div class="clearer"></div>
+            </form>
+        </div>
+        <!--##show-->
+    </div>
+
+    <div class="clearer"></div>
+
+</div>
+
+<div id="vorschau_container" style="display:none;">
+    <div id="contenttext">
+        <div id="bodytext" class="bodytext" align="justify" style="padding: 12px 0 12px 12px""></div>
+    </div>
+    <div id="preview_close">
+        <img style="cursor: pointer;" alt="Vorschau schliessen" onclick="preview()" src="/images/html/lb/closelabel.gif"/>
+    </div>
+</div>
+
+<!--<div id="test" style="display:none;"></div>-->
+
+!#ausgaben_output
+!#ausgaben_inaccessible
+
+<script type="text/javascript">
+//     <!--##hide-sort_content-->
+    Sortable.create("content_blocks",
+        {only: 'ajax_move',
+            onUpdate:function(){
+                new Ajax.Request(
+                    '!#ausgaben_ajax_request?' + Sortable.serialize("content_blocks"),
+                    {
+                        onComplete:function(){
+                            new Effect.Highlight("content_blocks",{startcolor: '#FEF6DE'});
+                            location.reload(true);
+                        }
+                    }
+                );
+            }
+        }
+    );
+//     <!--##show-->
+
+//     Event.observe('vorhang_cancel','click',buttonCancel);
+   // Event.observe('vorhang_preview','click',preview);
+
+    var dauer = 0.5;
+    var deckkraft = 0.8;
+
+//     <!--##hide-ajax_scroll-->
+    Event.observe(window,'load',ajax_scroll);
+    function ajax_scroll() {
+        if ( $('!{section}') ) {
+            Effect.ScrollTo(
+                '!{section}',{offset:-20}
+            );
+            Effect.Pulsate('!{section}');
+        }
+    }
+//     <!--##show-->
+
+
+        lb_cancel = new LB_imitate('cancel');
+
+//         <!--##hide-edit-->
+        lb_release = new LB_imitate('release');
+//         <!--##show-->
+        lb_preview = new LB_imitate('vorschau_container',{top:100});
+
+
+    function preview() {
+        if ( $('vorschau_container').style.display == 'none' ) {
+
+            var update = new Ajax.Updater('bodytext',
+                                        '!#ausgaben_form_aktion',
+                                        {
+                                            asynchronous:true,
+                                            parameters: 'ajax=on&save=on',
+                                            onComplete:function(){
+                                                dd_initialize();
+                                                lb_preview.show();
+                                                Event.observe('vorhangOverlay','click',preview );
+                                            }
+                                        }
+            );
+            return false;
+        } else {
+            lb_preview.hide();
+            $('bodytext').innerHTML = '';
+        }
+    }
+</script>
+<!--##end-->
+</body>
+</html>

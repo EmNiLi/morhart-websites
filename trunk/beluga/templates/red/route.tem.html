@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+<title>bloged.list</title>
+<link rel="stylesheet" href="../../css/default/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/default/eed.css" type="text/css" media="screen" />
+</head>
+<body>
+<!--##begin-->
+
+<script language="Javascript">
+    function map24_removeDefaultValues(){
+    if (document.link2map24.sstreet.value == 'Stra�e')  document.link2map24.sstreet.value   = '';
+    if (document.link2map24.szip.value    == 'PLZ')         document.link2map24.szip.value      = '';
+    if (document.link2map24.scity.value   == 'Ort')         document.link2map24.scity.value     = '';
+    }
+
+    function map24_removeDefaultValues(){
+    if (document.link2map24.dstreet.value == 'Stra�e')  document.link2map24.dstreet.value   = '';
+    if (document.link2map24.dzip.value    == 'PLZ')         document.link2map24.dzip.value      = '';
+    if (document.link2map24.dcity.value   == 'Ort')         document.link2map24.dcity.value     = '';
+    if (document.link2map24.dstate.value   == 'Ort')    document.link2map24.dstate.value    = '';
+    if (document.link2map24.sstreet.value == 'Stra�e')  document.link2map24.sstreet.value   = '';
+    if (document.link2map24.szip.value    == 'PLZ')         document.link2map24.szip.value      = '';
+    if (document.link2map24.scity.value   == 'Ort')         document.link2map24.scity.value     = '';
+    if (document.link2map24.sstate.value   == 'Ort')    document.link2map24.sstate.value    = '';
+    }
+
+</script>
+#(text)
+<table style="float:left" width=200 cellpadding=0 cellspacing=0 class=blockborder>
+    <form action="http://link2.map24.com" method=get onSubmit="map24_removeDefaultValues();"  target="_blank" NAME="link2map24">
+        <input type=hidden name=lid value="cd640b79">
+        <input type=hidden name=maptype     value="JAVA">
+        <input type=hidden name=width       value="1500">
+        <input type=hidden name=action      value="route">
+        <input type=hidden name=dstreet     value="Afrastraße 65e">
+        <input type=hidden name=dzip        value="86316">
+        <input type=hidden name=dcity       value="Friedberg">
+        <input type=hidden name=dcountry    value="DE">
+        
+        
+        <input type=hidden name=rtype value="fast"><input type=hidden name=ddescription value="bbsbeluga home">
+        <tr>
+            <td class="map24_title" style="height:51px;background-image:url(http://img.map24.com/map24/link2map24/de/routeto_header.gif)">Route berechnen</td>
+        </tr>
+        <tr>
+            <td HEIGHT=18 class=map24_padding bgcolor=#EDEFF1><div class=map24_text><b>Start</b> </div></td>
+        </tr>
+        <tr>
+            <td class=map24_cell>
+            <input TYPE=TEXT name="sstreet" class=map24_input value="Stra�e" size=20 style="width: 179px;" onFocus="javascript:if (document.link2map24.sstreet.value == 'Straße') document.link2map24.sstreet.value = '';"><br>
+            <input TYPE=TEXT name="szip" class=map24_input value="PLZ"  size=5  style="width: 36px;"  onFocus="javascript:if (document.link2map24.szip.value == 'PLZ') document.link2map24.szip.value = '';">
+            <input TYPE=TEXT name="scity" class=map24_input value="Ort"     size=20 style="width: 140px;"  onFocus="javascript:if (document.link2map24.scity.value == 'Ort') document.link2map24.scity.value = '';">
+            <br>
+            <SELECT name='scountry' class=map24_list style="width: 179px;"><OPTION value="AF" >Afghanistan</OPTION><OPTION value="AL" >Albanien</OPTION><OPTION value="DZ" >Algerien</OPTION><OPTION value="AS" >Amerikanisch-Samoa</OPTION><OPTION value="VI" >Amerikanische Jungferninseln</OPTION><OPTION value="AD" >Andorra</OPTION><OPTION value="AO" >Angola</OPTION><OPTION value="AI" >Anguilla</OPTION><OPTION value="AG" >Antigua und Barbuda</OPTION><OPTION value="AR" >Argentinien</OPTION><OPTION value="AM" >Armenien</OPTION><OPTION value="AW" >Aruba</OPTION><OPTION value="AZ" >Aserbaidschan</OPTION><OPTION value="AU" >Australien</OPTION><OPTION value="ET" >Äthiopien </OPTION><OPTION value="EG" >Ägypten</OPTION><OPTION value="GQ" >Äquatorialguinea</OPTION><OPTION value="BS" >Bahamas</OPTION><OPTION value="BH" >Bahrain</OPTION><OPTION value="BD" >Bangladesch</OPTION><OPTION value="BB" >Barbados</OPTION><OPTION value="BE" >Belgien</OPTION><OPTION value="BZ" >Belize</OPTION><OPTION value="BJ" >Benin</OPTION><OPTION value="BM">Bermuda</OPTION><OPTION value="BT" >Bhutan</OPTION><OPTION value="BO" >Bolivien</OPTION><OPTION value="BA" >Bosnien und Herzegowina</OPTION><OPTION value="BW" >Botsuana</OPTION><OPTION value="BR" >Brasilien</OPTION><OPTION value="VG" >Britische Jungferninseln</OPTION><OPTION value="BN" >Brunei Darussalam</OPTION><OPTION value="BG" >Bulgarien</OPTION><OPTION value="BF" >Burkina Faso</OPTION><OPTION value="MM" >Burma</OPTION><OPTION value="BI" >Burundi</OPTION><OPTION value="CL" >Chile</OPTION><OPTION value="CN" >China</OPTION><OPTION value="CK" >Cookinseln</OPTION><OPTION value="CR" >Costa Rica</OPTION><OPTION value="CI" >Côte d'Ivoire (Elfenbeinküste)</OPTION><OPTION value="DK" >Dänemark</OPTION><OPTION value="DE" selected>Deutschland</OPTION><OPTION value="DM" >Dominica</OPTION><OPTION value="DO" >Dominikanische Republik</OPTION><OPTION value="DJ" >Dschibuti</OPTION><OPTION value="EC" >Ecuador</OPTION><OPTION value="SV" >El Salvador</OPTION><OPTION value="ER" >Eritrea</OPTION><OPTION value="EE" >Estland</OPTION><OPTION value="FK" >Falklandinseln</OPTION><OPTION value="FO" >Färöer</OPTION><OPTION value="FJ" >Fidschi</OPTION><OPTION value="FI" >Finnland</OPTION><OPTION value="FR" >Frankreich</OPTION><OPTION value="PF" >Französisch-Polynesien</OPTION><OPTION value="GF" >Französisch-Guayana</OPTION><OPTION value="GA" >Gabun</OPTION><OPTION value="GM" >Gambia</OPTION><OPTION value="GE" >Georgien</OPTION><OPTION value="GH" >Ghana</OPTION><OPTION value="GI" >Gibraltar</OPTION><OPTION value="GD" >Grenada</OPTION><OPTION value="GR" >Griechenland</OPTION><OPTION value="GP" >Guadeloupe</OPTION><OPTION value="GU" >Guam</OPTION><OPTION value="GT" >Guatemala</OPTION><OPTION value="GN" >Guinea</OPTION><OPTION value="GW" >Guinea-Bissau</OPTION><OPTION value="GY" >Guyana</OPTION><OPTION value="HT" >Haiti</OPTION><OPTION value="HN" >Honduras</OPTION><OPTION value="IN" >Indien</OPTION><OPTION value="ID" >Indonesien</OPTION><OPTION value="IQ" >Irak</OPTION><OPTION value="IR" >Iran</OPTION><OPTION value="IE" >Irland</OPTION><OPTION value="IS" >Island</OPTION><OPTION value="IL" >Israel</OPTION><OPTION value="IT" >Italien</OPTION><OPTION value="JM" >Jamaika</OPTION><OPTION value="JP" >Japan</OPTION><OPTION value="YE" >Jemen</OPTION><OPTION value="JO" >Jordanien</OPTION><OPTION value="KY" >Kaimaninseln</OPTION><OPTION value="KH" >Kambodscha</OPTION><OPTION value="CM" >Kamerun</OPTION><OPTION value="CA" >Kanada</OPTION><OPTION value="CV" >Kap Verde</OPTION><OPTION value="KZ" >Kasachstan</OPTION><OPTION value="QA" >Katar</OPTION><OPTION value="KE" >Kenia</OPTION><OPTION value="KG" >Kirgisistan</OPTION><OPTION value="KI" >Kiribati</OPTION><OPTION value="CO" >Kolumbien</OPTION><OPTION value="KM" >Komoren</OPTION><OPTION value="CD" >Kongo (ehem. Zaire)</OPTION><OPTION value="HR" >Kroatien</OPTION><OPTION value="CU" >Kuba</OPTION><OPTION value="KW" >Kuwait</OPTION><OPTION value="LA" >Laos</OPTION><OPTION value="LS" >Lesotho</OPTION><OPTION value="LV" >Lettland</OPTION><OPTION value="LB" >Libanon</OPTION><OPTION value="LR" >Liberia</OPTION><OPTION value="LY" >Libyen</OPTION><OPTION value="LI" >Liechtenstein</OPTION><OPTION value="LT" >Litauen</OPTION><OPTION value="LU" >Luxemburg</OPTION><OPTION value="MO" >Macao</OPTION><OPTION value="MG" >Madagaskar</OPTION><OPTION value="MW" >Malawi</OPTION><OPTION value="MY" >Malaysia</OPTION><OPTION value="MV" >Malediven</OPTION><OPTION value="ML" >Mali</OPTION><OPTION value="MT" >Malta</OPTION><OPTION value="MA" >Marokko</OPTION><OPTION value="MH" >Marshallinseln</OPTION><OPTION value="MQ" >Martinique</OPTION><OPTION value="MR" >Mauretanien</OPTION><OPTION value="MU" >Mauritius</OPTION><OPTION value="YT" >Mayotte</OPTION><OPTION value="MK" >Mazedonien</OPTION><OPTION value="MX" >Mexiko</OPTION><OPTION value="MD" >Moldawien</OPTION><OPTION value="MC" >Monaco</OPTION><OPTION value="MN" >Mongolei</OPTION><OPTION value="MS" >Montserrat</OPTION><OPTION value="MZ" >Mosambik</OPTION><OPTION value="NA" >Namibia</OPTION><OPTION value="NR" >Nauru</OPTION><OPTION value="NP" >Nepal</OPTION><OPTION value="NC" >Neukaledonien</OPTION><OPTION value="NZ" >Neuseeland</OPTION><OPTION value="NI" >Nicaragua</OPTION><OPTION value="NL" >Niederlande</OPTION><OPTION value="AN" >Niederländische Antillen</OPTION><OPTION value="NE" >Niger</OPTION><OPTION value="NG" >Nigeria</OPTION><OPTION value="KP" >Nordkorea</OPTION><OPTION value="NO" >Norwegen</OPTION><OPTION value="MP" >Nördliche Marianen</OPTION><OPTION value="OM" >Oman</OPTION><OPTION value="AT" >Österreich</OPTION><OPTION value="PK" >Pakistan</OPTION><OPTION value="PW" >Palau</OPTION><OPTION value="PA" >Panama</OPTION><OPTION value="PG" >Papua-Neuguinea</OPTION><OPTION value="PY" >Paraguay</OPTION><OPTION value="PE" >Peru</OPTION><OPTION value="PH" >Philippinen</OPTION><OPTION value="PL" >Polen</OPTION><OPTION value="PT" >Portugal</OPTION><OPTION value="PR" >Puerto Rico</OPTION><OPTION value="CG" >Republik Kongo</OPTION><OPTION value="RE" >Réunion</OPTION><OPTION value="RW" >Ruanda</OPTION><OPTION value="RO" >Rumänien</OPTION><OPTION value="RU" >Russische Föderation</OPTION><OPTION value="SB" >Salomonen</OPTION><OPTION value="ZM" >Sambia</OPTION><OPTION value="WS" >Samoa</OPTION><OPTION value="SM" >San Marino</OPTION><OPTION value="SA" >Saudi-Arabien</OPTION><OPTION value="ST" >São Tomé und Príncipe</OPTION><OPTION value="SE" >Schweden</OPTION><OPTION value="CH" >Schweiz</OPTION><OPTION value="SN" >Senegal</OPTION><OPTION value="CS" >Serbien und Montenegro</OPTION><OPTION value="SC" >Seychellen</OPTION><OPTION value="SL" >Sierra Leone</OPTION><OPTION value="ZW" >Simbabwe</OPTION><OPTION value="SG" >Singapur</OPTION><OPTION value="SK" >Slowakei</OPTION><OPTION value="SI" >Slowenien</OPTION><OPTION value="SO" >Somalia</OPTION><OPTION value="ES" >Spanien</OPTION><OPTION value="LK" >Sri Lanka</OPTION><OPTION value="KN" >St. Kitts und Nevis</OPTION><OPTION value="LC" >St. Lucia</OPTION><OPTION value="PM" >St. Pierre und Miquelon</OPTION><OPTION value="VC" >St. Vincent und die Grenadinen</OPTION><OPTION value="SD" >Sudan</OPTION><OPTION value="SR" >Suriname</OPTION><OPTION value="KR" >Südkorea</OPTION><OPTION value="ZA" >Südafrika</OPTION><OPTION value="SZ" >Swasiland</OPTION><OPTION value="SY" >Syrien</OPTION><OPTION value="TJ" >Tadschikistan</OPTION><OPTION value="TW" >Taiwan</OPTION><OPTION value="TZ" >Tansania</OPTION><OPTION value="TH" >Thailand</OPTION><OPTION value="TG" >Togo</OPTION><OPTION value="TO" >Tonga</OPTION><OPTION value="TT" >Trinidad und Tobago</OPTION><OPTION value="TD" >Tschad</OPTION><OPTION value="CZ" >Tschechische Republik</OPTION><OPTION value="TN" >Tunesien</OPTION><OPTION value="TM" >Turkmenistan</OPTION><OPTION value="TC" >Turks- und Caicosinseln</OPTION><OPTION value="TV" >Tuvalu</OPTION><OPTION value="TR" >Türkei</OPTION><OPTION value="UG" >Uganda</OPTION><OPTION value="UA" >Ukraine</OPTION><OPTION value="HU" >Ungarn</OPTION><OPTION value="UY" >Uruguay</OPTION><OPTION value="UZ" >Usbekistan</OPTION><OPTION value="VU" >Vanuatu</OPTION><OPTION value="VA" >Vatikanstadt</OPTION><OPTION value="VE" >Venezuela</OPTION><OPTION value="AE" >Vereinigte Arabische Emirate</OPTION><OPTION value="US" >Vereinigte Staaten von Amerika</OPTION><OPTION value="GB" >Vereinigtes Königreich</OPTION><OPTION value="VN" >Vietnam</OPTION><OPTION value="WF" >Wallis und Futuna</OPTION><OPTION value="BY" >Weißrussland</OPTION><OPTION value="CF" >Zentralafrikanische Republik</OPTION><OPTION value="CY" >Zypern</OPTION></SELECT>
+            </td>
+        </tr>
+        <tr>
+            <td HEIGHT=18 class=map24_padding bgcolor=#EDEFF1><div class=map24_text><b>Ziel</b></div></td>
+        </tr>
+        <tr>
+            <td class=map24_cell>
+            <div class=map24_text>
+                <b>bbsbeluga home</b><br>
+                Afrastra�e 65e<br>
+                86316 Friedberg (DE)
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td class=map24_cell align=right>
+            <div class=map24_text>
+                <INPUT TYPE=IMAGE src="http://img.map24.com/map24/link2map24/de/button_go.gif" >
+            </div>
+            </td>
+        </tr>
+    </form>
+
+</table>
+
+
+<table style="float:right" width=200 cellpadding=0 cellspacing=0 class=blockborder>
+    <form action="http://link2.map24.com" method=get onSubmit="map24_removeDefaultValues();"   target="_blank" NAME="link2map24">
+        <input type=hidden name=lid value=cd640b79>
+        <input type=hidden name=maptype value=JAVA>
+        <input type=hidden name=action value="route">
+        <input type=hidden name=width value=1500>
+
+        <input type=hidden name=rtype value="fast">
+        <tr>
+            <td class="map24_title" style="height:51px;background-image:url(http://img.map24.com/map24/link2map24/de/routeto_header.gif)">Route berechnen</td>
+        </tr>
+        <tr>
+            <td HEIGHT=18 class=map24_padding bgcolor=#EDEFF1><div class=map24_text><b>Start</b>  (Deutschland)</div></td>
+        </tr>
+        <tr>
+            <td class=map24_cell>
+                <input TYPE=TEXT name="sstreet" class=map24_input value="Stra�e" size=20 style="width: 179px;" onFocus="javascript:if (document.link2map24.sstreet.value == 'Straße') document.link2map24.sstreet.value = '';"><br>
+                <input TYPE=TEXT name="szip" class=map24_input value="PLZ"  size=5  style="width: 36px;"  onFocus="javascript:if (document.link2map24.szip.value == 'PLZ') document.link2map24.szip.value = '';">
+                <input TYPE=TEXT name="scity" class=map24_input value="Ort"     size=20 style="width: 140px;"  onFocus="javascript:if (document.link2map24.scity.value == 'Ort') document.link2map24.scity.value = '';">
+                <br><input type=hidden name=scountry value=DE>
+            </td>
+        </tr>
+        <tr>
+            <td HEIGHT=18 class=map24_padding bgcolor=#EDEFF1><div class=map24_text><b>Ziel</b>  (Deutschland)</div></td>
+        </tr>
+        <tr>
+            <td class=map24_cell>
+            <input TYPE=TEXT name="dstreet" class=map24_input value="Stra�e" size=20 style="width: 179px;" onFocus="javascript:if (document.link2map24.dstreet.value == 'Straße') document.link2map24.dstreet.value = '';"><br>
+            <input TYPE=TEXT name="dzip" class=map24_input value="PLZ"  size=5  style="width: 36px;"  onFocus="javascript:if (document.link2map24.dzip.value == 'PLZ') document.link2map24.dzip.value = '';">
+            <input TYPE=TEXT name="dcity" class=map24_input value="Ort"     size=20 style="width: 140px;"  onFocus="javascript:if (document.link2map24.dcity.value == 'Ort') document.link2map24.dcity.value = '';">
+            <br> <input type=hidden name=dcountry value=DE>
+            </td>
+        </tr>
+        <tr>
+            <td class=map24_cell align=right><div class=map24_text> <INPUT TYPE=IMAGE src="http://img.map24.com/map24/link2map24/de/button_go.gif"></div>
+        </td>
+        </tr>
+    </form>
+</table>
+
+
+
+
+<!--##end-->
+</body>
+</html>

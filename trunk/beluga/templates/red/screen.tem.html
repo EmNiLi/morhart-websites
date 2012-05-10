@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title>default</title>
+        <meta name="author" content="" />
+        <meta name="description" content=" " />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+        <link rel="stylesheet" href="../../css/html/screen.css" type="text/css" media="all" title="Standard" />
+        <link rel="stylesheet" href="../../css/html/extra_default.css" type="text/css" />
+        <link rel="stylesheet" href="../../css/html/eed.css" type="text/css" />
+        <link rel="stylesheet" href="../../css/html/lightbox.css" type="text/css" />
+    </head>
+    <body>
+<!--##begin-->
+    <!--$Id: -2051315182.list.tem.html 1272 2008-03-13 13:00:15Z buffy1860 $-->
+    <div id="contenttext">
+        <div class="bodytext" align="justify" style="padding: 12px 0 12px 12px;">
+            
+            #{main}
+        </div>
+    </div>
+
+    <div id="leftpanel">
+        #{auth}
+        <!--##hide-news-->
+        #(blog_head)
+        <div style="clear:left"></div>  
+        <!--##show-->
+        <!--##hide-level2-->
+        <h2>!{ueberschrift}</h2>
+
+        <div style="clear:left"></div>  
+            <!--##show-->
+        <div align="justify" class="news">
+
+            <!--##loop-level2-->
+            <h1><a href="!{link}" title="!{title}" class="!{class}">!{item}</a></h1>
+            <!--##cont-->
+
+
+            <!--##loop-news-->
+            <h1><a href="!{detaillink}">!{datum} ::: !{titel_org}</a></h1>
+            <!--##cont-->
+
+            <!--##hide-news-->
+            <h1><a href="!#pathvars_virtual/blog.html">weitere</a></h1>
+            <!--##show-->
+    </div>
+
+    <div style="clear:left"></div>  
+
+    <div id="tools">
+        #(tools_head)
+        <div style="clear:left"></div>  
+        <div align="justify" class="news">
+            #(tools)
+        </div>
+        <div style="clear:left"></div>  
+        <div class="news">
+        <div style="clear:left"></div>  
+        <p><a href="http://www.wetter.com/home/extern/location.php?type=WORLD&id=35809"><img src="http://www.wetter.com/home/woys/woys.php?,C,1c,WORLD,35809" border="0" alt=""></a></p>
+        </div>
+            <div style="clear:left"></div>  
+        <div class="news">
+            <!-- Amazon-Info-Banner BEGIN -->
+            <p><iframe src="http://rcm-de.amazon.de/e/cm?t=belugabbs07-21&o=3&p=20&l=ur1&category=multiproduct&banner=1JR06WEJQWNY05ZMJ682&f=ifr" width="120" height="90" scrolling="no" border="0" style="border:none;" frameborder="0"></iframe></p>
+            <div style="clear:both"></div> 
+            <!-- Amazon-Info-Banner ENDE -->
+        </div>
+    </div>
+</div>
+<!--##end-->
+    </body>
+</html>
